@@ -1,0 +1,119 @@
+.images {
+  padding: 0px 0px 0px 40px;
+  display: flex !important;
+  flex-direction: row;
+  margin-top: 60px !important;
+
+  &__total {
+    padding: 0px 10px !important;
+  }
+
+  &__container {
+    box-shadow: 0 4px 8px 0 rgba(204, 196, 196, 0.35);
+    width: 17%;
+    height: 200px;
+    margin: 2% 1%;
+
+    &-item {
+      position: relative;
+    }
+
+    &-actions {
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        height: 33%;
+      }
+
+      .view {
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+          width: 60%;
+        }
+      }
+
+      .info {
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 12px;
+        padding: 2px 10px;
+        color: white;
+        background: gray;
+      }
+    }
+
+    &:hover,
+    &.selected {
+      .images__container-actions {
+        opacity: 1;
+        position: relative;
+        z-index: 25;
+        /* width: 17.1%; */
+        top: -184px;
+        height: 201px;
+        margin: 2.8% 0% 0% 0%;
+      }
+
+      .images__thumbnail {
+        background: rgba(71, 68, 68, 0.541176);
+
+        img {
+          opacity: 0.3;
+        }
+      }
+
+      .images__info {
+        color: white;
+        background-color: gray;
+      }
+    }
+
+    &.selected {
+      .select-icon {
+        color: white;
+      }
+    }
+  }
+
+  &__thumbnail {
+    height: 130px;
+
+    img {
+      width: 100%;
+      max-height: 130px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: block;
+    padding: 5px 10px;
+
+    &-name {
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: block;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &-dataset {
+      display: block;
+      font-weight: 100;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

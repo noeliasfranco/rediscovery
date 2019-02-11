@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import 'core/settings.scss';
+@import 'components/header.scss';
+@import 'components/images.scss';
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body, h1, h2, h3, h4, h5, h6, input, input[type=checkbox], input[type=radio], select, p {
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  background-color: #F4F4F4;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+body, html, #app, #app > div{
+  height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
