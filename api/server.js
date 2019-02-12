@@ -14,7 +14,6 @@ const DIST_DIR = path.join(__dirname, 'dist/app');
 const HTML_FILE = path.join(DIST_DIR, 'index.html');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/favicon.ico', express.static(path.join(__dirname, '../app/assets/images', 'favicon.ico')));
 
 if (isDevelopment) {
   const config = require('../webpack.dev.config');
