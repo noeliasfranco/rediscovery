@@ -28,7 +28,8 @@
     "open:coverage": "npm run test:coverage && opn ./coverage/lcov-report/index.html",
     "build": "cross-env NODE_ENV=production cross-env BABEL_ENV=production npm run build:server && npm run build:client",
     "build:server": "rimraf ./dist &&  babel api --out-dir ./dist/api",
-    "build:client": "webpack --config webpack.prod.config.js --progress"
+    "build:client": "webpack --config webpack.prod.config.js --progress",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "7.1.6",
