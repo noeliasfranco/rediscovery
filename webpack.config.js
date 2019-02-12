@@ -20,7 +20,7 @@ module.exports = {
   entry: './index',
   output: {
     path: DIST_DIR, // Note: Physical files are only output by the production
-    publicPath: `${config.api.host}:${config.api.port}/`,
+    publicPath: './',
     filename: 'bundle.js'
   },
   plugins: [],
